@@ -32,8 +32,9 @@ article {
   padding: 10px;
 }
 article img {
+  max-width: 100%;
   width: 800px;
-  height: 366px;
+  max-height: 366px;
 }
 .readMoreLink {
     text-decoration: underline;
