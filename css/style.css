@@ -37,7 +37,8 @@ figcaption {
     text-decoration: underline;
     color: blue;
 }
-p {
+p,
+blockquote {
     line-height: 120%;
     text-align: justify;
 }
@@ -103,4 +104,87 @@ a {
 }
 header {
     text-align: center;
+}
+
+.menuMobile,
+.LatestPosts,
+.subMobile,
+.archive,
+.contactMe {
+    display: none;
+}
+
+@media (max-width: 700px) {
+    nav {
+        display: none;
+    }
+    .menuMobile {
+        display: block;
+    }
+    #fname {
+        margin: 10px 0;
+        padding: 5px;
+        float: right;
+    }
+    #menu {
+        display: inline-flex;
+    }
+
+    article {
+        font-size: 10px;
+        max-width: 70%;
+    }
+    .column {
+        margin: 10px;
+        width: 100%;
+        padding: 10px;
+        background-color: white;
+        display: grid;
+    }
+    .navMobile {
+        display: block;
+        max-width: 100%;
+    }
+    .section {
+        float: right;
+    }
+    .LatestPosts {
+        display: block;
+        max-width: 96%;
+        font-size: 9px;
+    }
+
+    .LatestPosts a {
+        display: block;
+        color: #000;
+        padding: 8px;
+        border-bottom: solid 1px black;
+    }
+    .LatestPosts a:hover {
+        color: #918e8d;
+    }
+    .LatestPosts h4 {
+        font-size: 15px;
+    }
+    .subMobile {
+        display: block;
+        max-width: 100%;
+    }
+    .subMobile h4 {
+        font-size: 15px;
+    }
+    .archive {
+        display: block;
+        max-width: 100%;
+    }
+    .contactMe {
+        display: block;
+        max-width: 100%;
+    }
+    .icon {
+        background-color: transparent;
+    }
+    footer h6 {
+        font-size: 8px;
+    }
 }
