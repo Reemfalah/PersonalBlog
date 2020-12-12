@@ -122,9 +122,9 @@ header {
         display: block;
     }
     #fname {
-        margin: 10px 0;
+        margin: 10px 0 0 65px;
         padding: 5px;
-        float: right;
+        /* float: right; */
     }
     #menu {
         display: inline-flex;
@@ -132,7 +132,8 @@ header {
 
     article {
         font-size: 10px;
-        max-width: 70%;
+        max-width: 100%;
+        margin-bottom: 30px;
     }
     .column {
         margin: 10px;
